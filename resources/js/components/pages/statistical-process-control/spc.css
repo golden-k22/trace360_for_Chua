@@ -1,0 +1,55 @@
+.css-t3ipsp-control:hover{
+    border-color: rgb(102, 102, 102);
+}
+.text-end{
+    text-align: right !important;
+}
+/*.form-label{*/
+    /*font-size: 14px;*/
+/*}*/
+.text-black-color{
+    color: black!important;
+}
+
+.filter-btn{
+    height: 35px;
+    margin-top: 1px;
+}
+.reset-btn{
+    height: 35px;
+    margin-top: 1px;
+    border: 1px solid #dddddd!important;
+}
+.form-control-success-fill {
+    background-color: #51bb25 !important;
+    color: #fff !important;
+}
+.card-border{
+    border: 1px solid #d5d5d5!important;
+}
+.right-important{
+    right: -2px!important;
+}
+.m-t--40{
+    margin-top: -40px!important;
+}
+.z-index-0{
+    z-index: 0!important;
+}
+.d-flex {
+    padding: 15px 0;
+    margin-bottom: 15px;
+    display: flex !important;
+}
+
+.no-border{
+    border: none!important;
+    box-shadow: none!important;
+}
+.p-10{
+    padding: 10px!important;
+}
+
+.txt-white{
+    background: #FFFFFF;
+}

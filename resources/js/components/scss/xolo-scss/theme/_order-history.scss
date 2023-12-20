@@ -1,0 +1,139 @@
+/**=====================
+     40. Order History CSS start
+==========================**/
+.order-history{
+  th {
+    &:last-child {
+      min-width: 120px;
+    }
+  }
+  h6 {
+    font-weight: 600;
+    color: $dark-color;
+  }
+  .rdt_TableHead{
+    .rdt_TableCol{
+      font-weight: 500 !important;
+      > div{
+        font-size: 15px;
+        color: var(--theme-font-color);
+      }
+      &:nth-child(2){
+        justify-content: flex-start;
+      }
+    }
+  }
+  .rdt_TableBody {
+    .rdt_TableRow {
+      .rdt_TableCell {
+        &:first-child {
+          background-color: var(--auth-bg-color);
+        }
+        &:nth-child(n+2){
+          background-color: var(--auth-bg-color);
+        }
+      }
+      &:hover {
+        .rdt_TableCell {
+          &:first-child {
+            background-color: var(--auth-bg-color);
+          }
+        }
+      }
+      &:nth-child(even) {
+        .rdt_TableCell {
+          &:nth-child(n+2) {
+            background-color: $white;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        .rdt_TableCell {
+          &:first-child {
+            background-color: $white;
+          }
+        }
+      }
+    }
+    .rdt_TableCell {
+      padding: 12px;
+    }
+  }
+  .title-orders{
+    font-weight: 600;
+    background-color: var(--light-body-bg-color);
+  }
+  table{
+    th,td{
+      text-align: center;
+      &:first-child{
+        text-align: left;
+      }
+    }
+    thead{
+      tr{
+        th{
+          vertical-align: middle;
+          border-top: none;
+          padding-top: 0;
+        }
+      }
+    }
+    tbody{
+      tr{
+        td{
+          vertical-align: middle;
+          .product-name{
+            a{
+              font-weight: 600;
+            }
+            .order-process{
+              font-size: 13px;
+              padding-left: 15px;
+              .order-process-circle{
+                position: relative;
+                &:before{
+                  position: absolute;
+                  content: '';
+                  width: 7px;
+                  height: 7px;
+                  border-radius: 100%;
+                  background-color: var(--dark-gray);
+                  left: -15px;
+                  top: 4px;
+                }
+                &.shipped-order{
+                  &:before{
+                    background-color: $success-color;
+                  }
+                }
+                &.cancel-order{
+                  &:before{
+                    background-color: $danger-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+        &:last-child{
+          td{
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1199px){
+ .order-history{
+   table{
+     width: 900px;
+     overflow: auto;
+   }
+ }
+
+}
+/**=====================
+     76. Order History CSS end
+==========================**/

@@ -1,0 +1,10 @@
+.empty-header{
+    height: 0px;    
+    border:none;
+}
+.rt-noData{
+    display: none!important;
+}
+.ReactTable .rt-tbody .rt-tr-group {
+    border:none;
+}

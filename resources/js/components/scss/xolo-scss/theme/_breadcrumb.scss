@@ -1,0 +1,51 @@
+/**=====================
+    57. breadcrumb CSS Start
+==========================**/
+.breadcrumb-colored{
+	li{
+		a{
+			color: var(--breadcrumb-ancher-color);
+		}
+		&.active{
+			color: var(--breadcrumb-ancher-color);
+			opacity:0.7;
+		}
+	}
+	.breadcrumb-item{
+		&:before{
+			color: var(--breadcrumb-ancher-color);
+		}
+	}
+	.breadcrumb-item.txt-dark{
+		&:before{
+			color: var(--breadcrumb-ancher-dark-color);
+		}
+	}
+}
+.breadcrumb-item{
+	&.active{
+		text-transform: capitalize;
+	}
+}
+.breadcrumb{
+	padding: 0.75rem 1rem;
+	border-radius: 0.25rem;
+	background-color: #e9ecef; 
+	
+}
+.breadcrumb-items{
+	.list-group-item{
+		padding: 0;
+		background-color: transparent !important;
+		&.active{
+			background-color: transparent;
+			border-color: transparent;
+		}
+	}
+	.breadcrumb-item + .breadcrumb-item {
+		padding-left: 0.5rem !important;
+	}
+}
+/**=====================
+    57. breadcrumb CSS ends
+==========================**/

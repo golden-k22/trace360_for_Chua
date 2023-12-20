@@ -1,0 +1,405 @@
+.app-container{
+    background-color: #eceeee;
+    /*background-color:#eceeee;*/
+}
+
+.dashboard-container{
+    padding: 25px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-family: Arial;
+}
+
+.react-component-container{
+    margin-left: 10px;
+    margin-right: 10px;
+    align-content: center;
+}
+
+.weighing-duration-dashboard{
+    margin-left: -15px;
+}
+.operator-performance-dashboard{
+    margin-right: -15px;
+}
+.landing-title{
+    margin-top: 15%;
+}
+.side-list{
+    max-width: 300px;
+}
+.content{
+    margin-left: 300px;
+}
+.line-chart{
+    background-color: rgb(173, 241, 241);
+    border-radius: 10px;
+     /*padding: 30px;*/
+}
+.line-chart-header{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.line-chart-header > h4{
+    color: #5c5c5c;
+    text-align: left;
+}
+
+.chart-container{
+    width: 85%;
+    margin-left: 7%;
+    margin-top: 50px;
+}
+.setting-form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section-container{
+    padding-bottom: 0em;
+    /*border-bottom: 1px solid #202020;*/
+}
+.top-section{
+    margin-top: 15px;
+    margin-left: 0px;
+    padding-bottom: 1em;
+}
+.section-title{
+    color: #373737;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section-content{
+    color: #373737;
+    font-size: 18px;
+}
+.preloader{
+    /*justify-content: center;*/
+    width: 50px;
+    left: 55%;
+}
+.list_row{
+    margin-left: 10px;
+}
+.list_row_outstanding{
+    margin-left: 20px;
+}
+.row>[class*=col-] {
+    margin-bottom: 3px;
+}
+
+.list-container {
+    min-height: 100px;
+    border-radius: 0.5em;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border:1px solid #dddddd;
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px 1px #ccc;
+}
+.current-progress-wrapper{
+    margin-left: 15px;
+    margin-right: 0px;
+}
+.top-tab-button{
+    /* background: rgb(50 55 62)!important; */
+    font-size: 14px;
+    padding: 3px 10px;
+}
+/* For React Select box */
+.css-319lph-ValueContainer{
+    padding-top:0px!important;
+}
+
+.select-title {
+    text-align: right;
+    margin-top: 7px;
+    font-size: 20px;
+    color: #33A2E5;
+    margin-right: 10px;
+}
+
+.select-box{
+    min-width: 250px;
+    width: max-content;
+    margin-right: 15px;
+}
+.short-select-box{
+    margin-right: 15px;
+    min-width: 110px;
+}
+.filter-section{
+    display: flex;
+}
+.apexcharts-tooltip {
+    background: #f3f3f3;
+    text-align: left;
+}
+.device-name-label{
+    margin-top: -28px;
+    text-align: center;
+    color: #c7d0d9;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.align-center{
+    display: flex;
+    justify-content: center;
+}
+.align-right{
+    display: flex;
+    justify-content: right;
+}
+.align-left{
+    display: flex;
+    justify-content: left;
+}
+
+.margin-col-3{
+    padding-right: 50px;
+    width: 25%;
+}
+
+.padding-left-15{
+    padding-left: 15px;
+}
+.padding-right-15{
+    padding-right: 15px;
+}
+.padding-right-50{
+    padding-right: 50px;
+}
+.padding-top-5{
+    padding-top: 5px;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.font-14-bold{    
+    font-size: 14px;
+    font-weight: bold;
+    color: #373737;
+}
+.font-18-bold{    
+    font-size: 18px;
+    font-weight: bold;
+    color: #373737;
+}
+
+.cps-topbtn-txtsize{
+	font-size: 14px;
+}
+
+.cps-card-padding{
+	padding: 15px!important;
+}
+
+.cps-card-margin-btm{
+	margin-bottom: 30px;
+}
+
+.cps-card-date{
+	font-size: 16px;
+}
+.cps-card-resipe-title{
+	font-size: 18px;
+	font-weight: 600;
+    line-height: 1.2;
+	height: 2em;
+}
+.cps-card-pname-progress{
+	height: 1.5em;
+}
+.cps-card-pname-progress p{
+	font-size: 18px;
+}
+
+.cps-card-pname-stepnow{
+	margin: 15px;
+	font-size: 16px;
+}
+
+.cps-card-stepdur-title{
+	font-size: 18px;
+}
+
+.cps-card-stepdur-text{
+	font-size: 18px;
+	font-weight: 600;
+	height: 2em;
+}
+
+.cps-card-qlty-title{
+	font-size: 18px;
+}
+
+.cps-card-qlty-text{
+	font-size: 18px;
+	font-weight: 600;
+	height: 2em;
+}
+
+.cps-card-proorder-text{
+	font-size: 18px;
+	height: 2em;
+}
+
+/* Styles for 1366x768 */
+@media (min-width: 1366px) 
+{
+    .top-section {
+		margin-top: 5px;
+		margin-left: 0px;
+		padding-bottom: 5px;
+    }
+
+   .section-title {
+    color: #373737;
+    font-size: 24px;
+    font-weight: bold;
+    }
+
+	.cps-topbtn-txtsize{
+		font-size: 12px!important;
+	}
+
+	.cps-card-padding{
+		padding: 10px!important;
+	}
+
+	.cps-card-margin-btm{
+		margin-bottom: 12px!important;
+	}
+
+	.cps-card-date{
+	font-size: 12px;
+	}	
+
+	.cps-card-resipe-title{
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 1.0;
+		height: 2em;
+	}
+
+	.cps-card-pname-progress{
+	height: 3em;
+	}
+	
+	.cps-card-pname-progress p{
+	font-size: 12px;
+	}
+
+	.cps-card-pname-stepnow{
+		margin: 5px;
+		font-size: 12px;
+	}
+
+	.cps-card-stepdur-title{
+		font-size: 12px;
+	}
+
+	.cps-card-stepdur-text{
+		font-size: 12px;
+		font-weight: 600;
+		height: 2em;
+	}
+
+	.cps-card-qlty-title{
+		font-size: 12px;
+	}
+
+	.cps-card-qlty-text{
+		font-size: 12px;
+		font-weight: 600;
+		height: 2em;
+	}
+
+	.cps-card-proorder-text{
+		font-size: 14px;
+		height: 2em;
+	}
+
+}
+
+@media (min-width: 1920px) 
+{
+    .top-section {
+		margin-top: 15px;
+		margin-left: 0px;
+		padding-bottom: 1em;
+    }
+
+   .section-title {
+    color: #373737;
+    font-size: 30px;
+    font-weight: bold;
+    }
+
+	.cps-topbtn-txtsize{
+		font-size: 14px!important;
+	}
+
+	.cps-card-padding{
+		padding: 15px!important;
+	}
+
+	.cps-card-margin-btm{
+		margin-bottom: 30px!important;
+	}	
+
+	.cps-card-date{
+	font-size: 16px;
+	}	
+
+	.cps-card-resipe-title{
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 1.2;
+		height: 2em;
+	}
+
+	.cps-card-pname-progress{
+	height: 5em;
+	}
+	
+	.cps-card-pname-progress p{
+	font-size: 18px;
+	}
+
+	.cps-card-pname-stepnow{
+	margin: 15px;
+	font-size: 16px;
+	}
+
+	.cps-card-stepdur-title{
+	font-size: 18px;
+	}
+	
+	.cps-card-stepdur-text{
+	font-size: 18px;
+	font-weight: 600;
+	height: 2em;
+	}
+
+	.cps-card-qlty-title{
+	font-size: 18px;
+	}
+	
+	.cps-card-qlty-text{
+	font-size: 18px;
+	font-weight: 600;
+	height: 2em;
+	}
+	.cps-card-proorder-text{
+		font-size: 18px;
+		height: 2em;
+	}
+}

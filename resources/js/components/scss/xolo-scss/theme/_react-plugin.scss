@@ -1,0 +1,323 @@
+/**=====================
+    19. React-Plugin CSS Start
+==========================**/
+.simple-list {
+  .list-group-item {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+// typeahead css
+.suggestion-box {
+  position: absolute;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 0 2px 2px #f1f3f7;
+  margin-top: 5px;
+  ul,
+  .list-group {
+    max-height: 240px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    li {
+      padding: 10px 0;
+      &:hover {
+        span{
+          color: var(--primary-color);
+        }
+        svg{
+          stroke: var(--primary-color);
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: var(--theme-body-font-color);
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+        span {
+          line-height: 1;
+          margin-bottom: -3px;
+        }
+      }
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: var(--light-text);
+    margin: 10px 0;
+  }
+}
+.Typeahead {
+  width: 100%;
+  * {
+    box-sizing: border-box;
+    &:before {
+      box-sizing: border-box;
+    }
+    &:after {
+      box-sizing: border-box;
+    }
+  }
+  .tt-hint {
+    display: none !important;
+  }
+}
+.u-cf {
+  &:before {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+.u-hidden {
+  display: none !important;
+}
+.u-posRelative {
+  position: relative;
+}
+.Typeahead-spinner {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  display: none;
+  color: $light-color;
+}
+.ProfileCard-avatar {
+  svg {
+    height: 18px;
+    vertical-align: bottom;
+    path {
+      color: var(--dark-gray) !important;
+    }
+    polygon {
+      color: var(--dark-gray) !important;
+    }
+  }
+}
+.Typeahead-hint {
+  width: 100%;
+  padding: 5px 8px;
+  font-size: 24px;
+  line-height: 30px;
+  border: 1px solid var(--color-fiord);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--gray-60);
+  opacity: 1;
+}
+.Typeahead-menu {
+  position: absolute;
+  top: 32%;
+  left: 0;
+  padding: 0 15px 15px;
+  z-index: 100;
+  display: none;
+  max-height: 120px;
+  width: 100%;
+  overflow: auto;
+  background-color: $white;
+  box-shadow: none;
+  margin-top: 15px;
+}
+.Typeahead-menu.is-open {
+  display: block;
+}
+.Typeahead-selectable {
+  cursor: pointer;
+  + {
+    .Typeahead-selectable {
+      border-top: 1px solid var(--gray-60);
+    }
+  }
+}
+.ProfileCard {
+  position: relative;
+  padding: 10px;
+  border: 1px solid $card-border-color !important;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  &:hover {
+    .ProfileCard-avatar {
+      border-color: var(--border-table);
+    }
+    color: var(--color-scarpa);
+    background: var(--border-table);
+    .ProfileCard-screenName {
+      color: $white;
+    }
+    .ProfileCard-stat-label {
+      color: $white;
+    }
+  }
+}
+.ProfileCard-avatar {
+  position: absolute;
+  border-radius: 5px;
+}
+.ProfileCard-details {
+  padding-left: 35px;
+  float: left;
+  width: 100%;  
+}
+.ProfileCard-realName {
+  display: flex;
+  color: var(--dark-gray);
+  justify-content: space-between;
+}
+.ProfileCard-screenName {
+  display: inline-block;
+  color: var(--dark-gray);
+}
+.ProfileCard-description {
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.ProfileCard-stats {
+  float: right;
+  text-align: right;
+}
+.ProfileCard-stat {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  + {
+    .ProfileCard-stat {
+      margin-left: 5px;
+    }
+  }
+}
+.ProfileCard-stat-label {
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+.ProfileCard.is-active {
+  color: $white;
+  background: var(--theme-default);
+  .ProfileCard-screenName {
+    color: $white;
+  }
+  .ProfileCard-stat-label {
+    color: $white;
+  }
+}
+.EmptyMessage {
+  position: relative;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.Typeahead-spinner {
+  width: 1rem;
+  height: 1rem;
+}
+
+// language css
+.current_lang {
+  cursor: pointer;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.lang {
+  &.selected {
+    display: none;
+  }
+  span.lang-txt {
+    display: inline-flex;
+    margin-left: 8px;
+    font-weight: 500;
+  }
+  span {
+    span {
+      color: var(--gray-60);
+      font-weight: 400;
+      margin-left: 5px;
+    }
+  }
+}
+.more_lang {
+  transform: translateY(-20px);
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s cubic-bezier(0.25, 1.15, 0.35, 1.15);
+}
+.translate_wrapper.active .more_lang {
+  display: block;
+  position: absolute;
+  background-color: $white;
+  top: 50px;
+  right: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px #f1f3f7;
+  &:before {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid $white;
+    content: "";
+    top: -7px;
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+  }
+  &:after {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid var(--light-background);
+    content: "";
+    top: -7px;
+    position: absolute;
+    right: 20px;
+    z-index: 1;
+  }
+}
+.more_lang {
+  &.active {
+    opacity: 1;
+    transform: translateY(-0px);
+  }
+  .lang {
+    padding: 10px 15px;
+    display: flex;
+  }
+}
+.translate_wrapper {
+  &.active {
+    .more_lang {
+      .lang {
+        border-bottom: 1px solid var(--border-table);
+        &:last-child{
+          border-bottom: unset;
+        }
+      }
+    }
+  }
+}
+/**=====================
+    19. React-Plugin CSS Ends
+==========================**/

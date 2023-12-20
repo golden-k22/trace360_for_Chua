@@ -1,0 +1,1 @@
+require('./components/pages/overall-equipment-effectiveness/DashboardOverview');

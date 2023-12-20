@@ -1,0 +1,1 @@
+require('./components/pages/statistical-process-control/DashboardOverview');
